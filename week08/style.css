@@ -1,0 +1,113 @@
+
+body {
+    background-color: #F0F0F0;
+    color: #2C3E50;
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    color: #3498DB;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+header {
+    padding: 40px;
+    background-color: #2E4053;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header p {
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+#featured-destination, #top-attractions, #travel-tips {
+    margin-bottom: 40px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+
+footer {
+    padding: 20px;
+    background-color: #2E4053;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px;
+}
+
+footer a {
+    color: #3498DB;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.attractions-section {
+    display: flex; /*Flexbox container - allows elements inside container to be aligned/distributed efficiently along single or multi-line row/column*/
+    justify-content: space-around;/*controls horizontal alignment - space around helps
+    make sure articles are evenly spaced between each other.*/
+    flex-wrap: wrap;/*allows flex items - articles to wrap to next line if not enough space.
+    items wrap and start on a new row ensures layout remains good - not squished.*/
+}
+
+/*Creating boxes for information*/
+.attractions-section article {
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #2E4053;
+    border-radius: 8px;
+}
+
+#travel-tips {
+    list-style-type: none;
+}

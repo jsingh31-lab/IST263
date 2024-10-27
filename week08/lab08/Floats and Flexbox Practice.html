@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floats and Flexbox Practice</title>
+    <style>
+        .img1 {
+            float: left;
+            margin-right: 10px;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .part2 {
+            display: flex;
+        }
+
+        .article1 {
+            flex: 2; 
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            margin-right: 10px; 
+        }
+
+        .article2, .article3 {
+            flex: 1; 
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        
+        .article3 {
+            margin-right: 0;
+        }
+
+        /* Footer styling */
+        footer {
+            clear: both; 
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border-radius: 5px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer p:first-child {
+            float: left;
+        }
+
+        footer p:last-child {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Floats and Flexbox Practice</h1>
+    </header>
+
+    <main>
+        <h2>The Floats Part</h2>
+        <div class="part1">
+            <!-- Step 4: Float image to the left and add margin -->
+            <article>
+                <img src="unit81.jpg" class="img1" alt="fruit">
+                <p>Epic cheeseburgers come in all kinds of manifestations, but we want them in and around our mouth no matter what. Slide those smashed patties with the gently caramelized meat fat between a toasted brioche bun and pass it over. You fall in love with the cheeseburger itself but the journey ain’t half bad either. They’re the childhood friend that knows your highest highs and lowest lows. They’ve been with you through thick and thin and they’re the best at keeping secrets. Whether it’s dressed up or informal, cheeseburgers have your back.</p>
+                <p>Pop quiz: what’s the greatest thing to happen to your mind, body, and soul in recent history? A cheeseburger, obviously. Cheeseburgers know that what you want can also be what you need. Sometimes we lose sight of what really matters in life. There’s something to be said for a gourmet brie and truffle burger paired with parmesan frites, but don’t let that make you forget about the ol’ faithful with American cheddar and a squishy bun. Lettuce remind you that cheeseburgers come in all forms - bun intended.</p>
+            </article>
+            <!-- Step 5: Clear the float after the article -->
+            <div class="clear"></div>
+
+            <article>
+                <img src="unit8-2.jpg" class="img2" alt="fish">
+                <p style="overflow: auto;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </article>
+            <div class="clear"></div>
+
+            <article>
+                <img src="unit8-3.jpg" class="img3" alt="burger">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            </article>
+            <div class="clear"></div>
+        </div>
+
+        <h2>The Flexbox Part</h2>
+        <div class="part2">
+            <!-- Flexbox: Side-by-side layout for articles -->
+            <article class="article1">
+                <img src="unit81.jpg" class="p2img1" alt="fruit">
+                <p>Epic cheeseburgers come in all kinds of manifestations, but we want them in and around our mouth no matter what. Slide those smashed patties with the gently caramelized meat fat between a toasted brioche bun and pass it over.</p>
+            </article>
+
+            <article class="article2">
+                <img src="unit8-2.jpg" class="p2img2" alt="fish">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </article>
+
+            <article class="article3">
+                <img src="unit8-3.jpg" class="p2img3" alt="burger">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer with float left and right for text -->
+    <footer>
+        <p>&copy; 2024 Flexbox Practice</p>
+        <p>"Strength is the foundation of success."</p>
+    </footer>
+</body>
+</html>

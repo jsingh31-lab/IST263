@@ -1,0 +1,115 @@
+/* Navigation */
+nav {
+    background-color: #343a40;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+nav a:hover {
+    color: #FF4500;
+    padding: 5px;
+}
+
+/* General Styles */
+body {
+    background-color: #F0F0F0; 
+    color: #333333; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #006D77; 
+}
+
+/* Flexbox Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Flexbox Rows */
+.row1, .row2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    flex-wrap: wrap; /* Enables wrapping on smaller screens */
+}
+
+.row1 div, .row2 div {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    min-width: 300px; /* Sets a minimum width to prevent squishing */
+    box-sizing: border-box;
+}
+
+.row1 div:last-child, .row2 div:last-child {
+    border-right: none;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="text"], textarea {
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* iframe Styling */
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Responsive Navigation and Flexbox Adjustments */
+@media (max-width: 768px) {
+    /* Stacked Navigation */
+    nav a {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    nav a span {
+        display: none;
+    }
+
+    /* Stack Flexbox Items */
+    .row1, .row2 {
+        flex-direction: column; /* Stacks items vertically */
+    }
+}

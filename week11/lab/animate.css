@@ -1,0 +1,71 @@
+.first {
+    position: relative;
+    animation-name: first;
+    animation-duration: 2s;
+    animation-direction: reverse;
+    animation-iteration-count: 3;
+}
+@keyframes first {
+    0%   {left:0px; top:0px;}
+    33%  {left:200px; top:0px;}
+    67%  {left:200px; top:200px;}
+    100%  {left:0px; top:200px;}
+}
+.second {
+    position: relative;
+    animation-name: second;
+    animation-duration: 2s;
+    animation-direction: reverse;
+    animation-iteration-count: 3;
+}
+@keyframes second {
+    0%   {left:0px; top:0px;}
+    33%  {left:0px; top:200px;}
+    67%  {left:200px; top:200px;}
+    100%  {left:200px; top:0px;}
+}
+
+.third {
+    position: relative;
+    animation-name: third;
+    animation-duration: 2s;
+    animation-direction: reverse;
+    animation-iteration-count: 3;
+}
+@keyframes third {
+    0%   {left:0px; top:0px;}
+    33%  {left: -200px; top:0px;}
+    67%  {left: -200px; top:200px;}
+    100%  {left: 0px; top:200px;}
+}
+
+/* .rotatingWalnut {
+    animation-duration: 3000;
+    animation-iteration-count: Infinity;
+}
+@keyframes rotatingWalnut {
+    0% { transform: 'rotate(0) translate3D(-50%, -50%, 0)'}
+    33% { color: '#431236', offset: 0.3 }
+    67% { transform: 'rotate(360deg) translate3D(-50%, -50%, 0)' }
+  } */
+
+  /* @keyframes rotateWalnut {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+} */
+
+/* #firstWalnut {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    border-radius: 50%;
+    transition: transform 5s linear;
+} */
+
+/* .rotate {
+    animation: rotateWalnut 5s linear;
+} */

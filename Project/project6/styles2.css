@@ -1,0 +1,207 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    max-height: 140px;
+    max-width: 190px;
+}
+
+header img:last-child {
+    margin-right: -50px; /* Aligns the right logo */
+}
+
+header img:first-child {
+    margin-left: 20px; /* Aligns the left logo */
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #444;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #f4f4f4;
+    text-decoration: underline;
+}
+
+/* Hero Section */
+section h2 {
+    text-align: center;
+    padding: 20px;
+    background-color: #eaeaea;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Main Content Section */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+main div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+main section {
+    width: 30%;
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 8px #cccccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+main section h3 {
+    margin-bottom: 10px;
+}
+
+main section p {
+    margin: 10px 0;
+    text-align: justify;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+}
+
+main section img {
+    width: 100%;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* Recipe Section */
+main div.recipe-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px #ccc;
+}
+
+main div.recipe-section div {
+    flex: 1;
+    padding: 0 10px;
+}
+
+main div.recipe-section div img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+main div.recipe-section div.center {
+    flex: 1.5;
+    text-align: center;
+}
+
+main div.recipe-section div.center select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+#recipe-content {
+    max-width: 100%;
+    word-wrap: break-word;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px #cccccc;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#recipe-content ul {
+    margin: 10px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+/* Dropdown Menu */
+select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+select option {
+    padding: 10px;
+}
+
+/* Motivational Section */
+main section:last-of-type p {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 20px;
+}

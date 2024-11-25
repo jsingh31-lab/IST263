@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Guide - Physical Fitness</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div>
+            <img src="logo.png" alt="Left Logo" width="190" height="140">
+            <img src="logo.png" alt="Right Logo" width="190" height="140">
+        </div>
+        <h1>Are You Ready To Ascend?</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="workout.html">Workout Plans</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section>
+        <h2>Nutrition Guide for Weight Gain and Loss</h2>
+    </section>
+
+    <!-- Main Content Section -->
+    <main>
+        <div>
+            <section>
+                <h3>Nutrition for Weight Gain</h3>
+                <p>Nutrition tips and plans for gaining weight effectively and safely. Focus on calorie-dense foods, protein-rich diets, and strength training to support muscle growth.</p>
+            </section>
+
+            <section>
+                <h3>Why Nutrition Matters</h3>
+                <p>Proper nutrition supports a healthy lifestyle and helps you achieve your goals, whether it's weight gain or weight loss. It's the foundation of overall well-being.</p>
+            </section>
+
+            <section>
+                <h3>Nutrition for Weight Loss</h3>
+                <p>Nutrition tips and plans for losing weight effectively and sustainably. Emphasize whole foods, calorie control, and balanced meals to support your goals.</p>
+            </section>
+        </div>
+
+        <!-- Recipe Section -->
+        <div class="recipe-section">
+            <div>
+                <img src="weightgainrecipe.png" alt="Weight Gain Recipe Image">
+            </div>
+            <div class="center">
+                <h3>Explore Recipes</h3>
+                <p>Choose options for weight gain or weight loss recipes.</p>
+               
+                <select id="recipe-dropdown" name="recipes">
+                    <option value="">--Choose an option--</option>
+                    <option value="weight-gain">Weight Gain</option>
+                    <option value="weight-loss">Weight Loss</option>
+                </select>
+                <!-- Added div for displaying content -->
+                <div id="recipe-content" style="margin-top: 20px;"></div>
+            </div>
+            <div>
+                <img src="weightlossrecipe.png" alt="Weight Loss Recipe Image">
+            </div>
+        </div>
+
+        <section>
+            <p>By understanding the importance of nutrition and making healthy choices, you'll achieve your fitness goals faster. Use the resources provided above to build a meal plan that is right for you.</p>
+            <div>
+                <img src="motivationalpic1.png" alt="Motivational Nutrition Image">
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Physical Fitness</p>
+    </footer>
+
+    <!-- JavaScript for Dropdown -->
+    <script>
+        document.getElementById("recipe-dropdown").addEventListener("change", function () {
+            const contentDiv = document.getElementById("recipe-content");
+            const value = this.value;
+
+            if (value === "weight-gain") {
+                contentDiv.innerHTML = `
+                    <h3>Healthy Foods for Weight Gain</h3>
+                    <p>To gain weight healthily, focus on nutrient-dense, calorie-rich foods that provide essential vitamins and minerals.</p>
+                    <h4>Proteins</h4>
+                    <ul>
+                        <li>Chicken breast, turkey, and lean cuts of beef</li>
+                        <li>Salmon, tuna, and other fatty fish</li>
+                        <li>Eggs</li>
+                        <li>Greek yogurt</li>
+                        <li>Cottage cheese</li>
+                        <li>Protein shakes with whey or plant-based powders</li>
+                    </ul>
+                    <h4>Healthy Fats</h4>
+                    <ul>
+                        <li>Avocados</li>
+                        <li>Nuts (almonds, walnuts, cashews)</li>
+                        <li>Nut butters (peanut, almond, or cashew butter)</li>
+                        <li>Seeds (chia, flaxseeds, sunflower seeds)</li>
+                        <li>Olive oil, coconut oil, and avocado oil</li>
+                    </ul>
+                    <h4>Carbohydrates</h4>
+                    <ul>
+                        <li>Whole grains (brown rice, quinoa, whole wheat bread, and pasta)</li>
+                        <li>Starchy vegetables (sweet potatoes, potatoes, and squash)</li>
+                        <li>Oats and oatmeal</li>
+                        <li>Dried fruits (dates, raisins, and apricots)</li>
+                    </ul>
+                    <h4>Snacks and Additions</h4>
+                    <ul>
+                        <li>Smoothies with added fruits, nuts, and seeds</li>
+                        <li>Energy bars with natural ingredients</li>
+                        <li>Full-fat milk and dairy products</li>
+                    </ul>
+                `;
+            } else if (value === "weight-loss") {
+                contentDiv.innerHTML = `
+                    <h3>Healthy Foods for Weight Loss</h3>
+                    <p>For weight loss, prioritize low-calorie, nutrient-dense foods that promote satiety and energy.</p>
+                    <h4>Proteins</h4>
+                    <ul>
+                        <li>Lean meats like chicken breast and turkey</li>
+                        <li>White fish (cod, tilapia)</li>
+                        <li>Tofu and tempeh</li>
+                        <li>Low-fat Greek yogurt</li>
+                        <li>Egg whites</li>
+                    </ul>
+                    <h4>Healthy Fats (in moderation)</h4>
+                    <ul>
+                        <li>Avocado (controlled portions)</li>
+                        <li>Nuts and seeds (small handfuls)</li>
+                        <li>Olive oil for cooking and dressing</li>
+                    </ul>
+                    <h4>Carbohydrates</h4>
+                    <ul>
+                        <li>Non-starchy vegetables (broccoli, spinach, kale, and zucchini)</li>
+                        <li>Legumes (lentils, black beans, chickpeas)</li>
+                        <li>Whole grains in moderation (quinoa, barley)</li>
+                    </ul>
+                    <h4>Snacks and Additions</h4>
+                    <ul>
+                        <li>Fresh fruits (berries, apples, oranges)</li>
+                        <li>Air-popped popcorn</li>
+                        <li>Low-calorie soups (broth-based with vegetables)</li>
+                        <li>Herbal teas for hydration</li>
+                    </ul>
+                `;
+            } else {
+                contentDiv.innerHTML = ""; // Clear content if no option is selected
+            }
+        });
+    </script>
+</body>
+</html>

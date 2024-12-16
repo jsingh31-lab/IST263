@@ -1,0 +1,248 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #F8F9FA; /* Off-White */
+    color: #333333; /* Charcoal Gray */
+}
+
+/* Header Section */
+header {
+    background-color: #0074E4; /* Electric Blue */
+    color: #F8F9FA; /* Off-White */
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    max-height: 140px;
+    max-width: 190px;
+    margin: 10px;
+}
+
+header img:last-child {
+    margin-right: -50px; /* Adjust spacing on larger screens */
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #333333; /* Charcoal Gray */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #F8F9FA; /* Off-White */
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #FF6F3C; /* Fiery Orange */
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 20px;
+    background-color: #FFC107; /* Golden Yellow */
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #333333; /* Charcoal Gray */
+}
+
+/* Categories Section */
+.categories {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFFFFF; /* White */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.categories h3 {
+    text-align: center;
+    color: #0074E4; /* Electric Blue */
+    margin-bottom: 15px;
+}
+
+.categories ul {
+    list-style-type: none;
+    align-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.categories ul li {
+    margin: 10px 0;
+    line-height: 1.6;
+    color: #333333; /* Charcoal Gray */
+}
+
+/* Overview Section */
+.overview-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #FFFFFF; /* White */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.overview-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.overview-section .text-content {
+    flex: 1;
+    text-align: center;
+}
+
+.overview-section .text-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #0074E4; /* Electric Blue */
+}
+
+.overview-section .text-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    line-height: 1.6;
+    color: #333333; /* Charcoal Gray */
+}
+
+/* Dropdown Section */
+.dropdown-section {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #FFFFFF; /* White */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-section h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #0074E4; /* Electric Blue */
+}
+
+select#workout-dropdown {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+    width: 50%;
+}
+
+select#workout-dropdown:focus {
+    border-color: #FF6F3C; /* Fiery Orange */
+    outline: none;
+}
+
+#workout-details {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #F8F9FA; /* Off-White */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #333333; /* Charcoal Gray */
+}
+
+/* Tips Section */
+.tips-box {
+    padding: 20px;
+    background-color: #F8F9FA; /* Off-White */
+    border-left: 5px solid #0074E4; /* Electric Blue */
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tips-box h3 {
+    color: #0074E4; /* Electric Blue */
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.tips-box ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+    color: #333333; /* Charcoal Gray */
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    background-color: #333333; /* Charcoal Gray */
+    color: #F8F9FA; /* Off-White */
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #FFC107; /* Golden Yellow */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #FF6F3C; /* Fiery Orange */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .overview-section {
+        flex-direction: column;
+    }
+
+    .overview-section img {
+        width: 80%;
+    }
+
+    select#workout-dropdown {
+        width: 80%;
+    }
+}

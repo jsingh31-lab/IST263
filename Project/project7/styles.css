@@ -1,0 +1,226 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #F8F9FA; /* Off-White */
+    color: #333333; /* Charcoal Gray */
+}
+
+/* Header Section */
+header {
+    background-color: #0074E4; /* Electric Blue */
+    color: #F8F9FA; /* Off-White */
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+}
+
+header img {
+    max-height: 140px;
+    max-width: 190px;
+    margin: 10px;
+}
+
+header img:last-child {
+    margin-right: -50px; /* Adjust spacing on larger screens */
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #333333; /* Charcoal Gray */
+    flex-wrap: wrap; /* Wraps menu items on smaller screens */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #F8F9FA; /* Off-White */
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #FF6F3C; /* Fiery Orange */
+    text-decoration: underline;
+}
+
+/* Hero Section */
+section h2 {
+    text-align: center;
+    padding: 20px;
+    background-color: #FFC107; /* Golden Yellow */
+    font-size: 1.5rem;
+    color: #333333; /* Charcoal Gray */
+    margin-bottom: 20px;
+}
+
+/* Main Content Section */
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    flex-wrap: wrap; /* Allows stacking for smaller screens */
+    gap: 20px;
+}
+main section h3 {
+    margin-bottom: 10px;
+    color: #0074E4; /* Electric Blue */
+}
+
+main section {
+    width: calc(33.33% - 20px); /* Equal widths with space for gaps */
+    background-color: #FFFFFF; /* White */
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    min-width: 250px; /* Ensures minimum size */
+    flex-grow: 1;
+}
+
+main section img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Fix for Bullet Points Overflow */
+main section ul {
+    padding-left: 20px;
+    margin: 10px 0;
+    list-style-type: disc;
+    word-wrap: break-word;
+    color: #000000;
+}
+
+/* Motivational Video Section */
+iframe {
+    width: 100%; /* Makes the video fill its container horizontally */
+    height: 56.25vw; /* Maintains 16:9 aspect ratio (9/16 = 0.5625) */
+    max-width: 640px; /* Restricts video size on large screens */
+    max-height: 360px; /* Restricts height for large screens */
+    margin: 0 auto; /* Centers the video */
+    display: block; /* Ensures the video behaves as a block element */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+    border: none; /* Removes iframe border */
+}
+
+section {
+    text-align: center; /* Centers the content */
+    padding: 20px;
+    width: 100%; /* Allows the section to take up full width */
+    box-sizing: border-box; /* Includes padding in the width calculation */
+}
+
+section p {
+    text-align: center;
+    margin-top: 10px;
+    color: #333333; /* Charcoal Gray */
+}
+
+section a {
+    color: #0074E4; /* Electric Blue */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section a:hover {
+    text-decoration: underline;
+    color: #FF6F3C; /* Fiery Orange */
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    background-color: #333333; /* Charcoal Gray */
+    color: #F8F9FA; /* Off-White */
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #FFC107; /* Golden Yellow */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #FF6F3C; /* Fiery Orange */
+}
+
+/* Explore Box */
+.explore-box {
+    border: 2px solid #0074E4; /* Electric Blue */
+    background-color: #FFFFFF; /* White */
+    padding: 20px; /* Space inside the box */
+    margin: 20px auto; /* Adds vertical spacing and centers the box */
+    text-align: center; /* Centers the text */
+    max-width: 80%; /* Prevents the box from being too wide */
+    border-radius: 10px; /* Rounds the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow */
+    color: #333333; /* Charcoal Gray */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header div {
+        flex-direction: column; /* Stack logos and header */
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+    }
+
+    main {
+        flex-direction: column; /* Stack sections */
+        gap: 10px;
+    }
+
+    main section {
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    iframe {
+        width: 90%; /* Reduce iframe width */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    nav ul {
+        padding: 5px;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+}

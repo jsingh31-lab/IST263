@@ -3,30 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workout Plans - Physical Fitness</title>
+    <title>Ascension Fitness - Workout Plans</title>
     <link rel="stylesheet" href="styles3.css">
-    <style>
-        #workout-details {
-            margin-top: 20px;
-            padding: 20px;
-            background-color: #f9f9f9;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-        }
-
-        #workout-details h4 {
-            color: #282c34;
-        }
-
-        #workout-details ul {
-            margin: 10px 0;
-            padding-left: 20px;
-        }
-
-        #workout-details li {
-            margin-bottom: 10px;
-        }
-    </style>
+    <link rel="icon" href="logo.ico">
 </head>
 <body>
     <!-- Header Section -->
@@ -44,17 +23,31 @@
             </ul>
         </nav>
     </header>
+    <br>
 
-    <section>
+    <!-- Hero Section -->
+    <section class="hero">
         <h2>Full Workout Plans to Kickstart Your Transformation</h2>
     </section>
-    
+
+    <!-- Training Categories Section -->
+    <section class="categories">
+        <h3>Training Categories</h3>
+        <ul>
+            <li><strong>Strength Training:</strong> Focus on building muscle and lifting weights.</li>
+            <li><strong>Cardio Workouts:</strong> Improve cardiovascular health and burn calories.</li>
+            <li><strong>Flexibility and Mobility:</strong> Stretching and yoga-based workouts.</li>
+            <li><strong>Beginner, Intermediate, and Advanced Plans:</strong> Tailor content to different fitness levels.</li>
+        </ul>
+    </section>
+
+    <!-- Overview Section -->
     <main>
-        <div>
+        <div class="overview-section">
             <div>
                 <img src="workoutimage1.png" alt="Workout Image 1">
             </div>
-            <div>
+            <div class="text-content">
                 <h3>Why Workout Routines Matter</h3>
                 <ul>
                     <li>Build strength and endurance.</li>
@@ -67,11 +60,8 @@
             </div>
         </div>
 
-    <!-- Hero Section -->
-
-    <!-- Main Content Section -->
-    <main>
-        <section>
+        <!-- Dropdown Section -->
+        <div class="dropdown-section">
             <h3>Explore Workout Plans</h3>
             <label for="workout-dropdown">Choose a workout type:</label><br><br>
             <select id="workout-dropdown" name="workouts" onchange="displayWorkoutPlan()">
@@ -79,8 +69,19 @@
                 <option value="weight-gain">Weight Gain Workout Plan</option>
                 <option value="weight-loss">Weight Loss Workout Plan</option>
             </select>
-            <div id="workout-details"></div> <!-- Placeholder for workout details -->
-        </section>
+            <div id="workout-details"></div>
+        </div>
+
+        <!-- Tips for Success Section -->
+        <div class="tips-box">
+            <h3>Tips for Success</h3>
+            <ul>
+                <li>Warm-up for 5–10 minutes before any workout.</li>
+                <li>Stay hydrated throughout your fitness journey.</li>
+                <li>Focus on form and technique to avoid injuries.</li>
+                <li>Gradually increase the weight or intensity of your workouts.</li>
+            </ul>
+        </div>
     </main>
 
     <!-- Footer Section -->
